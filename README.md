@@ -84,7 +84,7 @@ Create The Same Tables in Your Bus_Reservation_System Database
 Create a Admin For Your Database
 
 ```bash
-INSERT INTO ADMIN VALUES('Admin_01','Admin@01');
+INSERT INTO ADMIN VALUES('userdefine','userdefine');
 ```
 
 
@@ -121,24 +121,6 @@ Run as Java Application !
 ```
 
 
-## Demo
 
-
-
-
-
-## Screenshots
-
-
-
-## Contributions
-
-Contributions are always **Welcome** !
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **Greatly Appreciated**.
-
-If you have a suggestion that would make this application better, Please fork the repo and create a pull request. You can also connect with me for further development of this application !
-
-Don't forget to give the project a star ! Thank You !
 
 

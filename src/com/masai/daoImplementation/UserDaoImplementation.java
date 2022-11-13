@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.masai.daoImplementation;
 
 import java.sql.Connection;
@@ -22,10 +20,7 @@ import com.masai.exception.TicketException;
 import com.masai.exception.UserException;
 import com.masai.utility.DatabaseUtility;
 
-/**
- * @author tejas
- *
- */
+
 public class UserDaoImplementation implements UserDao {
 
 	public User loginUser(String user_Id, String user_Password) throws UserException {
@@ -86,7 +81,7 @@ public class UserDaoImplementation implements UserDao {
 				
 				int difference = Passenger_Capacity - available_Seats;
 				
-				if(difference >= Ticket.getNo_of_Tickets()) {
+				if(difference <= Ticket.getNo_of_Tickets()) {
 					
 					PreparedStatement statement = connection.prepareStatement(
 							"INSERT INTO BOOKING(User_id,Route_id,Bus_no,No_of_Tickets,Travel_Date) VALUES (?,?,?,?,?)");
@@ -99,13 +94,15 @@ public class UserDaoImplementation implements UserDao {
 
 					int response = statement.executeUpdate();
 
-					if (response < 0) {
+					if (response > 0) {
 						result = "Ticket Reservation Sucessfull ! Please Wait & Check For Your Ticket Confirmation !";
 					}
 					
 				}
 				else {
-					throw new TicketException("Reservation Failed ! Number of Availabe Seats in the Bus are " +  available_Seats);
+					throw new TicketException("Reservation Failed ! Number of Availabe Seats in the Bus are "
+//				+  available_Seats
+				+ difference);
 				}
 			}
 			
@@ -231,7 +228,7 @@ public class UserDaoImplementation implements UserDao {
 
 				int distance = result.getInt("Distance");
 
-				int fare_per_kms = result.getInt("fare_per_kms");
+				int fare_per_kms = result.getInt("fare");
 
 				Date Day = result.getDate("Day");
 

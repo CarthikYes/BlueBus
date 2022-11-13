@@ -3,10 +3,7 @@
  */
 package com.masai.exception;
 
-/**
- * @author tejas
- *
- */
+
 public class AdminException extends Exception {
 
 	/**

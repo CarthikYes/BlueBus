@@ -42,14 +42,16 @@ public class Run {
 			System.out.println();
 			
 			 
-
+			System.out.println("🚌🚌🚌🚌🚌Blue🚍Bus🚌");
+			System.out.println("🙏");
+			System.out.println("Bus Reservation System");
 			System.out.println("Please Enter Your Choice");
 
 			System.out.println("");
 
-			System.out.println("1. Admin Login");
-			System.out.println("2. User Login");
-			System.out.println("3. Register User");
+			System.out.println("1. Admin");
+			System.out.println("2. User");
+			System.out.println("3. Register New User");
 			System.out.println("4. Exit");
 
 			int choice = scanner.nextInt();
@@ -82,7 +84,7 @@ public class Run {
 
 							System.out.println("");
 
-							System.out.println("Welcome to Admin Dashboard");
+							System.out.println("Admin Dashboard");
 
 							System.out.println("");
 
@@ -108,7 +110,7 @@ public class Run {
 
 									System.out.println("");
 
-									System.out.println("Welcome to Bus Dashboard");
+									System.out.println("Bus Dashboard");
 
 									System.out.println("");
 
@@ -273,7 +275,7 @@ public class Run {
 										System.out.println("Please Enter Bus Route Distance :");
 										int distance = scanner.nextInt();
 
-										System.out.println("Please Enter Bus Route Fare per/Km :");
+										System.out.println("Please Enter Bus Route Fare  :");
 										int fare_per_KM = scanner.nextInt();
 										scanner.nextLine();
 
@@ -339,7 +341,7 @@ public class Run {
 												System.out.println("Bus Route Source :" + t.getSource());
 												System.out.println("Bus Route Destination :" + t.getDestination());
 												System.out.println("Bus Route Distance :" + t.getDistance());
-												System.out.println("Bus Route Fare per/Km :" + t.getFare_Per_Km());
+												System.out.println("Bus Route Fare  :" + t.getFare_Per_Km());
 												System.out.println("Bus Route Date :" + t.getDay());
 												System.out.println("Bus Route Arrival Time :" + t.getArrival_Time());
 												System.out
@@ -362,7 +364,7 @@ public class Run {
 										admin_run = false;
 										break;
 									case 6:
-										System.out.println("Thank You For Using The Appilcation ! ");
+										System.out.println("Thank You For Using The BlueBUS ! ");
 										Route_run = false;
 										admin_run = false;
 										run = false;
@@ -592,10 +594,10 @@ public class Run {
 
 							System.out.println("");
 
-							System.out.println("1. Book Reservation");
-							System.out.println("2. Cancel Reservation");
+							System.out.println("1. Book Bus");
+							System.out.println("2. Cancel Bus Reservation");
 							System.out.println("3. View Bus TimeTable");
-							System.out.println("4. Check Reservation Status");
+							System.out.println("4. Check Bus Reservation Status");
 							System.out.println("5. Exit User Dashboard");
 							System.out.println("6. Exit Application");
 
@@ -674,7 +676,7 @@ public class Run {
 										System.out.println("Bus Route Source :" + t.getSource());
 										System.out.println("Bus Route Destination :" + t.getDestination());
 										System.out.println("Bus Route Distance :" + t.getDistance());
-										System.out.println("Bus Route Fare per/Km :" + t.getFare_Per_Km());
+										System.out.println("Bus Route Fare  :" + t.getFare_Per_Km());
 										System.out.println("Bus Route Date :" + t.getDay());
 										System.out.println("Bus Route Arrival Time :" + t.getArrival_Time());
 										System.out.println("Bus Route Departure Time :" + t.getDeparture_Time());

@@ -1,12 +1,7 @@
-/**
- * 
- */
+
 package com.masai.exception;
 
-/**
- * @author tejas
- *
- */
+
 public class UserException extends Exception {
 
 	/**
