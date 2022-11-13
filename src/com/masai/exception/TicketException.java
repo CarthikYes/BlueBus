@@ -3,10 +3,6 @@
  */
 package com.masai.exception;
 
-/**
- * @author tejas
- *
- */
 public class TicketException extends Exception {
 
 	/**
