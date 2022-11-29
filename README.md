@@ -1,12 +1,12 @@
 
-![Logo](https://nimbus-screenshots.s3.amazonaws.com/s/8d438c76f2e2bc1848e7d0d81907c802.png)
+![Logo](https://raw.githubusercontent.com/CarthikYes/Images/main/BB.PNG)
 
 
-# Bus Reservation System
+# Blue Bus Reservation System
 
  **C.L.I BASED APPLICATION**
 
-The **MSRTC** Board developed this application, which allows **Passengers** to browse the **Bus Schedule / Timetable** and arrange a **Reservation** for their trip.  
+This application, which allows **Passengers** to browse the **Bus Schedule / Timetable** and arrange a **Reservation** for their trip.  
 
 The application's primary objective is to provide **Passengers with both a Simple & User-Friendly Reservation Experience.**
 
