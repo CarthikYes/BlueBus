@@ -68,7 +68,7 @@ https://dev.mysql.com/downloads/mysql/
 Clone the Project
 
 ```bash
-git clone https://github.com/TejasMedade/taboo-lock-5540
+git clone https://github.com/CarthikYes/BlueBus.git
 ```
 
 Open MySQL Server
